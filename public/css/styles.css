@@ -1,26 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-bar{
+    width: 80%;
+    margin-left: 28px;
+    border-radius: 20px;
 }
 
 /*Estilos del Home*/
 
 .body-home{
-    background-color: rgba(128, 128, 128, 0.712);
+    background-color: whitesmoke;
+    overflow-x: hidden;
 }
 
-.logo{
-    padding: 1rem;
-    text-align: center;
+h1{
+    font-size: 20px;
+    text-align: start;
 }
 
-.logo img{
-    width: 100%;
+.logo-imagen{
+    display: none;
 }
 
 .main-home{
     width: 100vw;
-    height: 100vh;
 }
 
 .saludo-bienvenida{
@@ -28,18 +43,46 @@
     font-size: 40px;
 }
 
+.secciones{
+    text-align: center;
+}
+
+.anime{
+    width: 100vw;
+}
+
+.videojuegos{
+    width: 100vw;
+}
+
+.superheroes{
+    width: 100vw;
+}
+
 footer{
     width: 100%;
     border-top: solid 1px black;
+    padding: 1px;
+}
+
+.footer-bar ul{
     display: flex;
+    justify-content: space-evenly;
 }
 
 .footer-bar ul li{
     list-style: none;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 320px) {
     .nav-bar{
         display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search-bar{
+        width: 90%;
     }
 }
