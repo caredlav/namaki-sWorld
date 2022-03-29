@@ -136,6 +136,88 @@ footer{
         margin-right: 110px;
     }
 
+    .anime{
+        display: none;
+    }
+
+    .videojuegos{
+        display: none;
+    }
+
+    .superheroes{
+        display: none;
+    }    
+
+    .descripcion-home{
+        padding: 20px;
+    }
+
+    .descripcion-home p{
+        color: black;
+        font-weight: bold;
+        text-align: justify;
+        font-size: 2rem;
+    }
+
+    .descripcion-seccion-anime{
+        background-image: url("https://c.tenor.com/4e-jzGFTnxwAAAAC/goku-dragon-ball-z.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .descripcion-seccion-anime p{
+        color: #9f0c0c;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .descripcion-seccion-videojuegos{
+        background-image: url("https://elmercantil.com/wp-content/uploads/2020/11/01-1.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .descripcion-seccion-videojuegos p{
+        color: darkblue;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .descripcion-seccion-superheroes{
+        background-image: url("https://media2.giphy.com/media/dn16iAighr3WDUrffC/giphy.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .descripcion-seccion-superheroes p{
+        color: darkred;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .container-descripcion{
+        padding: 200px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .boton-ver{
+        width: 30vw;
+        height: 10vh;
+        font-size: 3rem;
+        font-weight: 900;
+        margin-top: 20px;
+        background-color: brown;
+        border-radius: 5rem;
+    }
+
     .footer-bar ul li{
         font-size: 20px;
     }
