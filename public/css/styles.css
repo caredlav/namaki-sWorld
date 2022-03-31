@@ -15,6 +15,10 @@ header{
     background-color: royalblue;
 }
 
+.logo-imagen{
+    width: 85vw;
+}
+
 .container-search i{
     position: relative;
     right: 26px;
@@ -39,17 +43,14 @@ h1{
     text-align: start;
 }
 
-.logo-imagen{
-    display: none;
-}
-
 .main-home{
     width: 100vw;
 }
 
 .saludo-bienvenida{
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 1rem;
 }
 
 .secciones{
@@ -92,12 +93,73 @@ footer{
     text-decoration: none;
 }
 
+
+/* Estilos version Smarthphone */
 @media screen and (min-width: 320px) {
     .nav-bar{
         display: none;
     }
+
+    .descripcion-seccion-anime-mobile{
+        background-image: url("https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/f/7/0/f/f70fad3b9c9a59c6507f6762820cdee9.jpg");
+        height: 27vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .descripcion-seccion-anime-mobile a{
+        text-align: center;
+    }
+
+    .descripcion-seccion-videojuegos-mobile{
+        background-image: url("https://indiehoy.com/wp-content/uploads/2020/09/high-score.jpg");
+        height: 27vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+    }
+
+    .descripcion-seccion-videojuegos-mobile a{
+        text-align: center;
+    }
+
+    .descripcion-seccion-superheroes-mobile{
+        background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/marvel-vs-dc-1559903212.jpg");
+        height: 27vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;         
+    }
+
+    .descripcion-seccion-superheroes-mobile a{
+        text-align: center;
+    }
+
+    .boton-ver-mobile{
+        background-color: #6495eda1;
+        border-radius: 5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .descripcion-home p{
+        font-weight: 900;
+        text-align: justify;
+        padding: 0rem 2rem 1rem 1rem;
+    }
+
+    .container-descripcion{
+        display: none;
+    }
 }
 
+
+/* Estilos version Tablets */
 @media screen and (min-width: 768px) {
     header i{
         font-size: 23px;
@@ -107,18 +169,41 @@ footer{
         width: 90%;
     }
 
+    .descripcion-seccion-anime-mobile{
+        height: 65vh;
+    }
+
+    .descripcion-seccion-videojuegos-mobile{
+        height: 65vh;
+    }
+
+    .descripcion-seccion-superheroes-mobile{
+        height: 65vh;
+    }
+
+    .boton-ver-mobile{
+        font-size: 2rem;
+    }
+
     .secciones{
         font-size: 40px;
     }
 }
 
+/* Estilos version PC's */
 @media screen and (min-width: 1024px) {
-    .menu-burger i{
+    .logo-imagen{
+        width: 18vw;
+        max-height: 8vh;
+    }
+
+    .menu-burger{
         display: none;
     }
 
     .nav-bar{
         display: block;
+        margin-top: 10px;
     }
 
     .nav-bar ul{
@@ -134,22 +219,18 @@ footer{
         font-weight: bolder;
         text-decoration: none;
         margin-right: 110px;
-    }
+    }      
 
-    .anime{
-        display: none;
+    .search-bar{
+        width: 94%;
     }
-
-    .videojuegos{
-        display: none;
-    }
-
-    .superheroes{
-        display: none;
-    }    
 
     .descripcion-home{
         padding: 20px;
+    }
+
+    .saludo-bienvenida{
+        font-size: 3rem;
     }
 
     .descripcion-home p{
@@ -159,15 +240,33 @@ footer{
         font-size: 2rem;
     }
 
+    .secciones{
+        margin-bottom: 25px;
+    }
+
+    .descripcion-seccion-anime-mobile{
+        display: none;
+    }
+
+    .descripcion-seccion-superheroes-mobile{
+        display: none;
+    }
+
+    .descripcion-seccion-videojuegos-mobile{
+        display: none;
+    }
+
     .descripcion-seccion-anime{
         background-image: url("https://c.tenor.com/4e-jzGFTnxwAAAAC/goku-dragon-ball-z.gif");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        margin-bottom: 50px;
+        box-shadow: 1px 5px 35px 7px black;
     }
 
     .descripcion-seccion-anime p{
-        color: #9f0c0c;
+        color: #a3a3a3;
         font-weight: bold;
         text-align: center;
         font-size: 2rem;
@@ -178,10 +277,12 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        margin-bottom: 50px;
+        box-shadow: 1px 5px 35px 7px black;
     }
 
     .descripcion-seccion-videojuegos p{
-        color: darkblue;
+        color: #4e4ec5;
         font-weight: bold;
         text-align: center;
         font-size: 2rem;
@@ -192,16 +293,20 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        margin-bottom: 50px;
+        box-shadow: 1px 5px 35px 7px black;
     }
 
     .descripcion-seccion-superheroes p{
-        color: darkred;
+        color: #8b8000;
         font-weight: bold;
         text-align: center;
         font-size: 2rem;
     }
 
     .container-descripcion{
+        height: 100vh;
+        background-color: #000000cc;
         padding: 200px;
         display: flex;
         justify-content: center;
@@ -215,7 +320,8 @@ footer{
         font-weight: 900;
         margin-top: 20px;
         background-color: brown;
-        border-radius: 5rem;
+        border-radius: 5rem;      
+        cursor: pointer;         
     }
 
     .footer-bar ul li{

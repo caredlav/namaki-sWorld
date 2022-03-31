@@ -1,1 +1,3 @@
-Proyecto en desarrollo
+Proyecto en desarrollo...
+
+Construcción de una página web enfocada a la venta de productos geeks.
