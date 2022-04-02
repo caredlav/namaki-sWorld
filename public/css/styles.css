@@ -12,7 +12,7 @@ header{
     justify-content: space-around;
     padding: 4px;
     margin-bottom: 5px;
-    background-color: royalblue;
+    background-color: #0b309dd4;
 }
 
 .logo-imagen{
@@ -51,6 +51,27 @@ h1{
     text-align: center;
     font-size: 2rem;
     padding: 1rem 2rem 1rem 1rem;
+}
+
+.musica-home{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.musica-home h6{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.musica-home audio{
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: orange;
 }
 
 .secciones{
@@ -193,7 +214,7 @@ footer{
 /* Estilos version PC's */
 @media screen and (min-width: 1024px) {
     .logo-imagen{
-        width: 18vw;
+        width: 22vw;
         max-height: 8vh;
     }
 
@@ -214,12 +235,22 @@ footer{
         list-style: none;
     }
 
+    .nav-bar ul li a i{
+        font-size: 15px;
+    }
+
     .nav-bar ul li a{
         color: black;
         font-weight: bolder;
         text-decoration: none;
-        margin-right: 110px;
+        margin-right: 4rem;
     }      
+
+    .nav-bar ul li a:hover{
+        border: 2px double black;
+        border-radius: 1rem;
+        background-color: antiquewhite;
+    }
 
     .search-bar{
         width: 94%;
@@ -238,6 +269,16 @@ footer{
         font-weight: bold;
         text-align: justify;
         font-size: 2rem;
+    }
+
+    .musica-home{
+        display: block;        
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+    .main-home h6{
+        text-align: unset;
     }
 
     .secciones{
@@ -326,5 +367,16 @@ footer{
 
     .footer-bar ul li{
         font-size: 20px;
+    }
+
+    .footer-bar ul li i:hover{
+        color: aliceblue;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    .nav-bar ul li a{
+        margin-right: 100px;
     }
 }
