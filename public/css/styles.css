@@ -92,6 +92,101 @@ h1{
 
 /*Fin de estilos del Home*/
 
+/*Estilos del Register*/
+
+.body-register{
+    /* background-image: url("https://netivist.org/uploads/forum/discussions/pictures/559588e855f4ff016cc41758/manga-vs-comics.jpg"); */
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQVSE1CvgiBgOCVuAVWMMioV0ts_Col7yWbA&usqp=CAU");
+    background-repeat: round;
+    height: 100vh;
+}
+
+.body-register a{
+    color: blue;
+    font-weight: 900;
+}
+
+.form-register-user{
+    position: relative;
+    top: 2rem;
+    border: solid 1px red;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0rem 0rem 4rem 1rem;
+    background-color: floralwhite;
+}
+
+.container-input{
+    margin-bottom: 20px;
+}
+
+.etiquetas-register{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(9, 9, 126);
+}
+
+.inputs{
+    width: 80vw;
+    border-radius: 1rem;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.inputs:focus{
+    outline: unset;
+}
+
+.container-terms{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.container-terms .etiqueta-term{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-terms .etiquetas-register{
+    margin-right: 10px;
+}
+
+.container-radio-buttons{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+}
+
+.container-radio-buttons label{
+    color: black;
+}
+
+.container-radio-buttons input{
+    margin-right: 10px;
+    position: relative;
+    top: 6px;
+}
+
+input[type="radio"]:checked{
+    box-shadow: 0px 0px 0px 2px darkorange;
+}
+
+.container-buttons-register{
+    text-align: center;
+}
+
+.boton-form-register{
+    border-radius: 9px;
+    color: red;
+    font-weight: bold;
+    padding: 3px;
+    background-color: lightgrey;
+}
+
 footer{
     width: 100%;
     background-color: chocolate;
@@ -249,6 +344,7 @@ footer{
     .nav-bar ul li a:hover{
         border: 2px double black;
         border-radius: 1rem;
+        color: firebrick;
         background-color: antiquewhite;
     }
 
