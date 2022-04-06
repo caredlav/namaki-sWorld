@@ -29,6 +29,8 @@ header{
     margin-left: 28px;
     border-radius: 20px;
     padding: 3px 2px 3px 5px;
+    color: black;
+    font-weight: bold;
 }
 
 /*Estilos del Home*/
@@ -94,8 +96,7 @@ h1{
 
 /*Estilos del Register*/
 
-.body-register{
-    /* background-image: url("https://netivist.org/uploads/forum/discussions/pictures/559588e855f4ff016cc41758/manga-vs-comics.jpg"); */
+.body-register{    
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQVSE1CvgiBgOCVuAVWMMioV0ts_Col7yWbA&usqp=CAU");
     background-repeat: round;
     height: 100vh;
@@ -127,7 +128,7 @@ h1{
     color: rgb(9, 9, 126);
 }
 
-.inputs{
+.inputs-register{
     width: 80vw;
     border-radius: 1rem;
     padding: 5px;
@@ -135,7 +136,7 @@ h1{
     font-weight: bold;
 }
 
-.inputs:focus{
+.inputs-register:focus{
     outline: unset;
 }
 
@@ -180,12 +181,82 @@ input[type="radio"]:checked{
 }
 
 .boton-form-register{
+    border: solid 1px black;
     border-radius: 9px;
     color: red;
     font-weight: bold;
     padding: 3px;
     background-color: lightgrey;
 }
+
+/*Fin de los estilos del Register*/
+
+/*Inicio de estilos del Login*/
+
+.body-login{
+    background-image: url("https://i.pinimg.com/736x/fd/1c/a7/fd1ca7d83c7c246816adf3b6452ce5c5.jpg");
+    background-repeat: round;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.body-login .hipervinculo-home{
+    color: cornflowerblue
+}
+
+.form-login{
+    position: relative;
+    top: 7rem;
+    border: solid 1px black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0rem 0rem 4rem 1rem;
+    background-color: #fffaf06e;
+}
+
+.etiquetas-login{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inputs-login{
+    padding: 5px;
+    border-radius: 1rem;
+    width: 80vw;
+    height: 4vh;
+    color: black;
+    font-weight: bold;
+}
+
+.inputs-login:focus{
+    outline: none;
+}
+
+.container-button-login{
+    text-align: center;
+}
+
+.boton-login{
+    border-radius: 9px;
+    width: 23vw;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.container-hipernviculo-sin-cuenta{
+    text-align: center;
+}
+
+.hipernviculo-sin-cuenta{
+    color: black;
+    font-weight: 900;
+}
+
+/*Fin de los estilos del Login*/
 
 footer{
     width: 100%;
@@ -281,6 +352,8 @@ footer{
         font-size: 23px;
     }
 
+    /*Estilos del Home*/
+
     .search-bar{
         width: 90%;
     }
@@ -304,10 +377,41 @@ footer{
     .secciones{
         font-size: 40px;
     }
+
+    /*Fin de los estilos del Home*/
+
+    /*Estilos del Register*/
+
+    .inputs-register{
+        width: 92vw;
+    }
+
+    .container-terms .etiqueta-term{
+        width: 90vw;
+    }
+
+    /*Fin de loes estilos de Register*/
+
+    /*Inicio de los estilos del Login*/
+
+    .inputs-login{
+        width: 91vw;
+    }
 }
 
 /* Estilos version PC's */
 @media screen and (min-width: 1024px) {
+
+    /*Estilos del Home*/
+
+    header{
+        position: sticky;
+        top: 0px;
+        background-color: #0b309dd4;
+        backdrop-filter: saturate(180%) blur(5px);
+        z-index: 1;
+    }
+
     .logo-imagen{
         width: 22vw;
         max-height: 8vh;
@@ -460,6 +564,113 @@ footer{
         border-radius: 5rem;      
         cursor: pointer;         
     }
+
+    /*Fin de estilos del Home*/
+
+    /*Estilos del Register*/
+
+    .body-register{
+        background-image: url("https://netivist.org/uploads/forum/discussions/pictures/559588e855f4ff016cc41758/manga-vs-comics.jpg");
+    }
+
+    .body-register a{
+        color: #fff;
+        margin-left: 1rem;
+        padding: 1rem;
+        border: solid 1px black;
+        border-radius: 1rem;
+        background-color: #00000085;
+        text-decoration: none;
+    }
+
+    .body-register a:hover{
+        background-color: #200404;
+        transition: 500ms;
+    }
+
+    .body-register a i{
+        margin-top: 2rem;        
+    }
+
+    .form-register-user{
+        width: 50vw;
+        left: 17rem;
+        background-color: #000000a6;
+        border: solid 1px lightgray;
+    }
+
+    .etiquetas-register{
+        color: #fda030;
+    }
+
+    .container-terms .etiqueta-term{
+        color: #e1bdbd;
+    }
+
+    .container-radio-buttons label{
+        color: #e1bdbd;
+    }
+
+    .boton-form-register{
+        color: #200404;
+        cursor: pointer;
+    }
+
+    .boton-form-register:hover{
+        background-color: orange;
+        transition: 500ms;
+    }
+
+    .inputs-register{
+        width: 47vw;
+    }
+
+    /*Fin de los estilos del Register*/
+
+    /*Inicio de los estilos del Login*/
+
+    .body-login .hipervinculo-home{
+        color: #fff;
+        margin-left: 1rem;
+        padding: 1rem;
+        border: solid 1px black;
+        border-radius: 1rem;
+        background-color: #00000085;
+        text-decoration: none;
+    }
+
+    .body-login .hipervinculo-home:hover{
+        background-color: #200404;
+        transition: 500ms;
+    }
+
+    .hipervinculo-home i{
+        margin-top: 2rem;    
+    }
+
+    .body-login{
+        background-image: url("https://lh3.googleusercontent.com/-mecXAiXHkag/Yerer7BnSmI/AAAAAAAAtPs/pn8ui1_MH_cejPtL4u3XFTIm7M19zskNgCNcBGAsYHQ/s0-e97/Capitulos-Fairy-Tail-Sin-Relleno-Orden-Cronologico.jpg");
+    }
+
+    .form-login{
+        width: 50vw;
+        left: 17rem;
+    }
+
+    .inputs-login{
+        width: 47vw;
+    }
+    
+    .boton-login{
+        cursor: pointer;
+    }
+
+    .boton-login:hover{
+        background-color: orangered;
+        transition: 500ms;        
+    }
+
+    /*Fin de los estilos del Login*/
 
     .footer-bar ul li{
         font-size: 20px;
