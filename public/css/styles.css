@@ -258,6 +258,60 @@ input[type="radio"]:checked{
 
 /*Fin de los estilos del Login*/
 
+/*Inicio de estilos del AboutUs*/
+
+.titulo-about-us{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container-img-about-us{
+    text-align: center;
+}
+
+.container-img-about-us img{
+    width: 90vw;
+    border-radius: 6rem;
+    box-shadow: 1px 0px 27px 5px black;
+}
+
+.parrafos-about-us{
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+    border: solid 1px blue;
+    border-radius: 10px;
+}
+
+.container-img2-about-us{
+    text-align: center;
+}
+
+.container-img2-about-us img{
+    width: 90vw;
+    border-radius: 6rem;
+    box-shadow: 1px 0px 27px 5px black;
+    margin-bottom: 1rem;
+}
+
+.hipervinculo-contacto{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border: solid 1px red;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 3rem;
+    background: darksalmon;
+    color: darkblue;
+}
+
+/*Fin de los estilos del AboutUs*/
+
 footer{
     width: 100%;
     background-color: chocolate;
