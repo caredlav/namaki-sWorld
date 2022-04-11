@@ -4,6 +4,7 @@ const path=require('path');
 
 const routerHome=require('./routes/home.routes');
 const routerUser=require('./routes/user.routes');
+const routerProduct=require('./routes/product.routes')
 
 app.set('views',path.resolve(__dirname,"./views"));
 
@@ -13,6 +14,7 @@ app.use(express.static('public'));
 //declaramos las rutas
 app.use('/',routerHome);
 app.use('/',routerUser);
+app.use('/',routerProduct);
 
 //se levanta el servidor en el puerto 3000
 app.listen(3000,console.log('corriendo en puerto 3000'));
