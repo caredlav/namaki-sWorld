@@ -105,6 +105,10 @@ header{
     font-weight: 900;
 }
 
+.main-register{
+    height: 100vh;
+}
+
 .form-register-user{
     position: relative;
     top: 2rem;
@@ -113,7 +117,7 @@ header{
     padding: 1rem;
     margin: 1rem;
     box-shadow: 0rem 0rem 4rem 1rem;
-    background-color: floralwhite;
+    background-color: #fffaf0c2;
 }
 
 .container-input{
@@ -330,11 +334,11 @@ input[type="radio"]:checked{
     background-color: #e1b13c;
 }
 
-.category-section-anime .category-article-anime .container-img{
+.category-section-anime .category-article-anime .container-img-mobile{
     text-align: center;
 }
 
-.category-section-anime .category-article-anime .container-img img{
+.category-section-anime .category-article-anime .container-img-mobile img{
     width: 95vw;
     border-radius: 1rem;
 }
@@ -362,11 +366,11 @@ input[type="radio"]:checked{
     background-color: #4949b7;
 }
 
-.category-section-videogames .category-article-videogames .container-img{
+.category-section-videogames .category-article-videogames .container-img-mobile{
     text-align: center;
 }
 
-.category-section-videogames .category-article-videogames .container-img img{
+.category-section-videogames .category-article-videogames .container-img-mobile img{
     width: 95vw;
     border-radius: 1rem;
 }
@@ -394,11 +398,11 @@ input[type="radio"]:checked{
     background-color: yellowgreen;
 }
 
-.category-section-comics .category-article-comics .container-img{
+.category-section-comics .category-article-comics .container-img-mobile{
     text-align: center;
 }
 
-.category-section-comics .category-article-comics .container-img img{
+.category-section-comics .category-article-comics .container-img-mobile img{
     width: 95vw;
     border-radius: 1rem;
 }
@@ -760,6 +764,7 @@ footer{
 
     .body-register{
         background-image: url("https://netivist.org/uploads/forum/discussions/pictures/559588e855f4ff016cc41758/manga-vs-comics.jpg");
+        height: unset;
     }
 
     .body-register a{
@@ -890,6 +895,161 @@ footer{
     }
 
     /*Fin de los estilos del Login*/
+
+    /*Inicio de los estilos del categories*/
+
+    .main-categories h4{
+        font-size: 1rem;
+        margin: 8px;
+    }
+
+    .container-categories{
+        display: flex;
+    }
+
+    .category-section-anime{
+        height: 70vh;
+        margin-top: auto;
+    }
+
+    .category-section-anime .category-article-anime .container-img-mobile{
+        display: none;
+    }    
+
+    .category-section-anime .category-article-anime .container-img-pc{
+        animation: trans-img-anime 8000ms infinite;
+        width: 30vw;
+        height: 45vh;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+
+    .category-section-anime .category-article-anime a:hover{
+        background-color: #e1bdbd;
+    }
+
+    @keyframes trans-img-anime {
+     0%{
+        background-image: url("https://pm1.narvii.com/6438/aaca5d99cf1870c3437015f8d4e53308969d6573_hq.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+     }    
+     25%{
+        background-image: url("https://www.kawaiionline.top/wp-content/uploads/2020/09/figuras_anime_kawaii.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     50%{
+        background-image: url("https://http2.mlstatic.com/D_NQ_NP_968821-MCO45003160592_022021-O.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     75%{
+        background-image: url("https://m.media-amazon.com/images/I/710ax-EbmAL._AC_SY606_.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     100%{
+        background-image: url("https://pbs.twimg.com/media/EdW56uwWoAAqitp.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+    }    
+
+    .category-section-comics{
+        height: 70vh;
+    }
+
+    .category-section-comics .category-article-comics .container-img-mobile{
+        display: none;
+    }
+
+    .category-section-comics .category-article-comics .container-img-pc{
+        height: 45vh;
+        animation: trans-img-comic 8000ms infinite;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+
+    .category-section-comics .category-article-comics a:hover{
+        background-color: #e1bdbd;
+    }
+
+    @keyframes trans-img-comic {
+        0%{
+            background-image: url("https://www.figurascoleccionables.online/wp-content/uploads/2020/07/figura-coleccionable-batman-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }    
+        25%{
+            background-image: url("https://i0.wp.com/toogeek.co/wp-content/uploads/2020/06/889698407182.jpeg?fit=400%2C400&ssl=1");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        50%{
+            background-image: url("https://www.okchicas.com/wp-content/uploads/2019/05/joyas-avengers-730x381.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        75%{
+            background-image: url("https://cdn.fashiola.es/L585081507/marvel-comics-acero-inoxidable-na.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        100%{
+            background-image: url("https://static.wixstatic.com/media/6b981e_691ad77d9d0546d0a8adc8265dc48898~mv2.png/v1/fill/w_498,h_498,al_c,lg_1/6b981e_691ad77d9d0546d0a8adc8265dc48898~mv2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }    
+
+    .category-section-videogames{
+        height: 70vh;
+    }
+
+    .category-section-videogames .category-article-videogames .container-img-mobile{
+        display: none;
+    }
+
+    .category-section-videogames .category-article-videogames .container-img-pc{
+        height: 45vh;
+        animation: trans-img-videogames 8000ms infinite;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+
+    .category-section-videogames .category-article-videogames a:hover{
+        background-color: #e1bdbd;
+    }
+
+    @keyframes trans-img-videogames {
+        0%{
+            background-image: url("https://ventaspop-images.staticgnt.com/DUwp7gIQKViGUi7nVfcPhJooFlg=/fit-in/700x0/filters:fill(white,1):strip_exif():quality(70)/files/products/569/576/51Od2i6KGKL._SL1000_.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }    
+        25%{
+            background-image: url("https://compass-ssl.xbox.com/assets/b9/1c/b91cc932-3e26-4ec8-8b2b-00b8b42702c8.jpg?n=444793_Gallery-0_1_1350x759.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        50%{
+            background-image: url("https://m.media-amazon.com/images/I/81iJG2js5-S._SY445_.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        75%{
+            background-image: url("https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1000_.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        100%{
+            background-image: url("https://topesdegama.com/app/uploads-topesdegama.com/2022/03/sedatech-pc-pro-gaming-pc-gaming.jpg?x=480&quality=20");
+            background-repeat: no-repeat;
+        }
+    }
+
+    /*Fin de los estilos del categories*/
 
     .footer-bar ul li{
         font-size: 20px;
