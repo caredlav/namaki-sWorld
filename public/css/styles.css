@@ -526,6 +526,69 @@ input[type="radio"]:checked{
 
 /*Fin de los estilos de subCategoriesAnime*/
 
+/*Inicio de los estilos de animeFigures*/
+
+.main-animeFigures{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-animeFigures .hipervinculo-categorias{
+    border: solid 1px black;
+    font-size: 2rem;
+    border-radius: 17px;
+    margin-top: 5px;
+    margin-left: 4px;
+    color: black;
+    background-color: lightsteelblue;
+    max-width: 37px;
+}
+
+.main-animeFigures h1{
+    text-align: center;
+    margin: 5px;
+    color: #c15d08;
+    text-shadow: 0 0 black;
+}
+
+.main-animeFigures .section-anime-figures{
+    margin: 1rem;
+}
+
+.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure{
+    margin-bottom: 1rem;
+}
+
+.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    background: darkgrey;
+}
+
+.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-img{
+    text-align: center;
+}
+
+.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-img img{
+    width: 90%;
+    height: 45vh;
+}
+
+.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-basic-info{
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-basic-info label{
+    font-weight: bold;
+    display: block;
+}
+
+/*Fin de los estilos de animeFigures*/
+
 footer{
     width: 100%;
     background-color: chocolate;
@@ -674,11 +737,7 @@ footer{
         font-size: 2rem;
     }
 
-    /*Fin de los estilos de Categories*/
-
-    .footer-bar ul li{
-        font-size: 25px;
-    }
+    /*Fin de los estilos de Categories*/    
 
     /*Inicio de los estilos del subCategoriesAnime*/
 
@@ -695,6 +754,10 @@ footer{
     }
     
     /*Fin de los estilos del subCategoriesAnime*/
+
+    .footer-bar ul li{
+        font-size: 25px;
+    }
 }
 
 /* Estilos version PC's */
@@ -1169,6 +1232,14 @@ footer{
     }
 
     /*Fin de los estilos del categories*/
+
+    /*Inicio de los estilos subCategoriesAnime*/
+
+    .main-subCategoriesAnime .container-article-subcategory-anime{
+        width: 28%;
+    }
+
+    /*FIn de los estilos subCategoriesAnime*/
 
     .footer-bar ul li{
         font-size: 20px;

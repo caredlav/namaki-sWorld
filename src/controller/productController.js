@@ -7,6 +7,9 @@ const productController={
     },
     getSubCategoriesForAnime: (req,res)=>{
         res.sendFile(path.resolve(__dirname,"../views/products/subCategoriesAnime.html"));
+    },
+    getAnimeFigures: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/animeFigures.html"));
     }
 }
 
