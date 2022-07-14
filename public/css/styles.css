@@ -526,16 +526,16 @@ input[type="radio"]:checked{
 
 /*Fin de los estilos de subCategoriesAnime*/
 
-/*Inicio de los estilos de animeFigures*/
+/*Inicio de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
-.main-animeFigures{
+.main-products{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.main-animeFigures .hipervinculo-categorias{
+.main-products .hipervinculo-categorias{
     border: solid 1px black;
     font-size: 2rem;
     border-radius: 17px;
@@ -546,60 +546,60 @@ input[type="radio"]:checked{
     max-width: 37px;
 }
 
-.main-animeFigures h1{
+.main-products h1{
     text-align: center;
     margin: 5px;
     color: #c15d08;
     text-shadow: 0 0 black;
 }
 
-.main-animeFigures .section-anime-figures{
+.main-products .section-products{
     margin: 1rem;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures{
+.main-products .section-products .container-articles-products{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure{
+.main-products .section-products .container-articles-products .container-article-product{
     margin-bottom: 1rem;
     width: 100%;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure{
+.main-products .section-products .container-articles-products .container-article-product .article-product{
     border: 1px solid black;
     border-radius: 5px;
     padding: 1rem;
     background: darkgrey;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-img{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-img{
     text-align: center;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-img img{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-img img{
     width: 90%;
     height: 45vh;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-basic-info{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-basic-info{
     padding: 1rem;
     text-align: center;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-basic-info label{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-basic-info label{
     font-weight: bold;
     display: block;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-buttons-mobile{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-buttons-mobile{
     text-align: center;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-buttons-mobile .btn-see-product{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-buttons-mobile .btn-see-product{
     font-size: 2rem;
     margin-right: 10px;
     padding: 10px;
@@ -608,11 +608,11 @@ input[type="radio"]:checked{
     background: #229ec3;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-buttons-mobile .btn-see-product a i{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-buttons-mobile .btn-see-product a i{
     color: #22150e;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-buttons-mobile .btn-cart{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-buttons-mobile .btn-cart{
     font-size: 2rem;
     margin-left: 10px;
     padding: 10px;
@@ -621,31 +621,31 @@ input[type="radio"]:checked{
     background: #ffe52e;
 }
 
-.main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-buttons-mobile .btn-cart a i{
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-buttons-mobile .btn-cart a i{
     color: #20201a;
 }
 
-.main-animeFigures .section-anime-figures .pagination{
+.main-products .section-products .pagination{
     margin: 10px 0;
 }
 
-.main-animeFigures .section-anime-figures .pagination ul{
+.main-products .section-products .pagination ul{
     display: flex;
     justify-content: center;
 }
 
-.main-animeFigures .section-anime-figures .pagination ul li{
+.main-products .section-products .pagination ul li{
     list-style: none;
     margin-left: 10px;
 }
 
-.main-animeFigures .section-anime-figures .pagination ul li span{
+.main-products .section-products .pagination ul li span{
     border: 1px solid black;
     font-size: 2rem;
     padding: 8px;
 }
 
-/*Fin de los estilos de animeFigures*/
+/*Fin de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
 footer{
     width: 100%;
@@ -813,18 +813,18 @@ footer{
     
     /*Fin de los estilos del subCategoriesAnime*/
 
-    /*Inicio de los estilos del animeFigures*/
+    /*Inicio de los estilos del animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
-    .main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure{
+    .main-products .section-products .container-articles-products .container-article-product{
         width: 28%;
         margin: 1rem;
     }
 
-    .main-animeFigures .section-anime-figures .pagination ul li{
+    .main-products .section-products .pagination ul li{
         margin-left: 30px;
     }
 
-    /*Fin de los estilos del animeFigures*/
+    /*Fin de los estilos del animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
     .footer-bar ul li{
         font-size: 25px;
@@ -1312,29 +1312,35 @@ footer{
 
     /*FIn de los estilos subCategoriesAnime*/
 
-    /*Inicio de los estilos de animeFigures*/
+    /*Inicio de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
-    .main-animeFigures .section-anime-figures{
+    .main-products .section-products{
         margin: auto;
     }
 
-    .main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure{
+    .main-products .section-products .container-articles-products .container-article-product{
         width: 16%;
     }
 
-    .main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-img img{
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-img img{
         width: 100%;
     }
 
-    .main-animeFigures .section-anime-figures .container-articles-anime-figures .container-article-anime-figure .article-anime-figure .container-buttons-mobile{
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-buttons-mobile{
         display: none;        
     }
 
-    .main-animeFigures .section-anime-figures .pagination{
+    .main-products .section-products .pagination{
         margin: 30px 0;
     }
 
-    /*Fin de los estilos de animeFigures*/
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-hover{
+        width: 136px;
+        height: 50px;
+        background: red;
+    }
+
+    /*Fin de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
     .footer-bar ul li{
         font-size: 20px;
