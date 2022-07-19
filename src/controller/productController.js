@@ -22,6 +22,24 @@ const productController={
     },
     getAnimeClothes: (req,res)=>{
         res.sendFile(path.resolve(__dirname,"../views/products/animeClothes.html"));
+    },
+    getSubCategoriesForVideogames: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/subCategoriesVideogames.html"));
+    },
+    getVideogames: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/videogames.html"));
+    },
+    getVideogamesAccessories: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/videogamesAccessories.html"));
+    },
+    getVideogamesConsoles: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/videogamesConsoles.html"));    
+    },
+    getComputers: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/computers.html"));
+    },
+    getComputersAccessories: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/computersAccessories.html"));
     }
 }
 
