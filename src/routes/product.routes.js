@@ -15,5 +15,11 @@ router.get("/categorias/videojuegos/consolas",productsController.getVideogamesCo
 router.get("/categorias/videojuegos/computadoras",productsController.getComputers);
 router.get("/categorias/videojuegos/accesorios-consolas",productsController.getVideogamesAccessories);
 router.get("/categorias/videojuegos/accesorios-computadoras",productsController.getComputersAccessories);
+router.get("/categorias/comics",productsController.getSubCategoriesForComics);
+router.get("/categorias/comics/figuras",productsController.getComicsFigures);
+router.get("/categorias/comics/resinas",productsController.getComicsResins);
+router.get("categorias/comics/novelas",productsController.getComics);
+router.get("/categorias/comics/accesorios",productsController.getComicsAccessories);
+router.get("/categorias/comics/ropa",productsController.getComicsClothes);
 
 module.exports=router;

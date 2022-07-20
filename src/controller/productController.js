@@ -40,6 +40,24 @@ const productController={
     },
     getComputersAccessories: (req,res)=>{
         res.sendFile(path.resolve(__dirname,"../views/products/computersAccessories.html"));
+    },
+    getSubCategoriesForComics: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/subCategoriesComics.html"));
+    },
+    getComics: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/comics.html"));
+    },
+    getComicsFigures: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/comicsFigures.html"));
+    },
+    getComicsResins: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/comicsResins.html"));
+    },
+    getComicsAccessories: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/comicsAccessories.html"));        
+    },
+    getComicsClothes: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/comicsClothes.html"));
     }
 }
 

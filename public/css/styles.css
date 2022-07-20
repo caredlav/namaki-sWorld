@@ -324,6 +324,10 @@ input[type="radio"]:checked{
     text-align: center;
 }
 
+.main-categories .container-categories{
+    margin: 1rem;
+}
+
 .category-section-anime{
     margin: 5px;
     padding: 3px;
@@ -339,7 +343,7 @@ input[type="radio"]:checked{
 }
 
 .category-section-anime .category-article-anime .container-img-mobile img{
-    width: 95vw;
+    width: 80vw;
     border-radius: 1rem;
 }
 
@@ -371,7 +375,7 @@ input[type="radio"]:checked{
 }
 
 .category-section-videogames .category-article-videogames .container-img-mobile img{
-    width: 95vw;
+    width: 80vw;
     border-radius: 1rem;
 }
 
@@ -403,7 +407,7 @@ input[type="radio"]:checked{
 }
 
 .category-section-comics .category-article-comics .container-img-mobile img{
-    width: 95vw;
+    width: 80vw;
     border-radius: 1rem;
 }
 
@@ -423,7 +427,7 @@ input[type="radio"]:checked{
 
 /*Fin de los estilos de Categories*/
 
-/*Inicio de los estilos de subCategoriesAnime*/
+/*Inicio de los estilos de subCategoriesAnime, subCategoriesVideogames, subCategoriesComics*/
 
 .main-subCategoriesAnime{
     width: 100%;
@@ -502,6 +506,46 @@ input[type="radio"]:checked{
     background-image: url("https://cf.shopee.com.co/file/a437b1c607f0987018140cc89c3eadb5");
 }
 
+.main-subCategoriesAnime .section-sub-category-anime .article-juegos{
+    background-image: url("../img/videogamesProducts/legend-of-zelda-bow.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-consolas{
+    background-image: url("../img/videogamesProducts/ps5-horizon.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-computadoras{
+    background-image: url("../img/videogamesProducts/pc-torre-gamer-ryzen-5600x.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-consolas-accesorios{
+    background-image: url("../img/videogamesProducts/joystick-ps4-urban-camouflage.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-computadoras-accesorios{
+    background-image: url("../img/videogamesProducts/audifonos-gamer-reddragon.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-figuras-peq-comics{
+    background-image: url("../img/comicsProducts/constantine.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-figuras-grand-comics{
+    background-image: url("../img/comicsProducts/capitan-america-hydra-resina.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-comics{
+    background-image: url("../img/comicsProducts/vengadores-4-old.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-accesorios-comics{
+    background-image: url("../img/comicsProducts/mujer-maravilla-kit.jpg");
+}
+
+.main-subCategoriesAnime .section-sub-category-anime .article-ropa-comics{
+    background-image: url("../img/comicsProducts/sueter-heroes-dc.jpg");
+}
+
 .container-ver-subcategoy-anime{
     text-align: center;
     position: relative;
@@ -524,7 +568,7 @@ input[type="radio"]:checked{
     font-size: 2em;
 }
 
-/*Fin de los estilos de subCategoriesAnime*/
+/*Fin de los estilos de subCategoriesAnime, subCategoriesVideogames, subCategoriesComics*/
 
 /*Inicio de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
@@ -1151,6 +1195,13 @@ footer{
 
     /*Inicio de los estilos del categories*/
 
+    .main-categories{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .main-categories h4{
         font-size: 1rem;
         margin: 8px;
@@ -1158,9 +1209,13 @@ footer{
 
     .container-categories{
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .category-section-anime{
+        width: 35%;
         height: 70vh;
         margin-top: auto;
     }
@@ -1210,6 +1265,7 @@ footer{
     }    
 
     .category-section-comics{
+        width: 35%;
         height: 70vh;
     }
 
@@ -1218,6 +1274,7 @@ footer{
     }
 
     .category-section-comics .category-article-comics .container-img-pc{
+        width: 30vw;
         height: 45vh;
         animation: trans-img-comic 8000ms infinite;
         border-radius: 1rem;
@@ -1230,7 +1287,7 @@ footer{
 
     @keyframes trans-img-comic {
         0%{
-            background-image: url("https://www.figurascoleccionables.online/wp-content/uploads/2020/07/figura-coleccionable-batman-1.jpg");
+            background-image: url("https://ae01.alicdn.com/kf/HTB1EarjXELrK1Rjy1zbq6AenFXas/Serie-de-pel-culas-Batman-figura-de-acci-n-Anime-modelo-movible-Batman-mu-ecas-decoraci.jpg_Q90.jpg_.webp");
             background-repeat: no-repeat;
             background-size: cover;
         }    
@@ -1257,6 +1314,7 @@ footer{
     }    
 
     .category-section-videogames{
+        width: 35%;
         height: 70vh;
     }
 
@@ -1265,6 +1323,7 @@ footer{
     }
 
     .category-section-videogames .category-article-videogames .container-img-pc{
+        width: 30vw;
         height: 45vh;
         animation: trans-img-videogames 8000ms infinite;
         border-radius: 1rem;
