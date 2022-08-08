@@ -624,6 +624,10 @@ input[type="radio"]:checked{
     text-align: center;
 }
 
+.main-products .section-products .container-articles-products .container-article-product .article-product .container-img .container-btns-pc{
+    display: none;
+}
+
 .main-products .section-products .container-articles-products .container-article-product .article-product .container-img img{
     width: 90%;
     height: 45vh;
@@ -690,6 +694,63 @@ input[type="radio"]:checked{
 }
 
 /*Fin de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
+
+/*Inicio de los estilos de shoppingCart*/
+
+.main-shoppingCart h2{
+    text-align: center;
+    margin: 1rem;
+}
+
+.main-shoppingCart .container-products{
+    margin: 1rem;
+}
+
+.main-shoppingCart .container-products .container-product{
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px 0px black;
+    padding: 1rem;
+    margin-bottom: 15px;
+} 
+
+.main-shoppingCart .container-products .container-product .product-in-shoppingCart thead tr th{
+    font-size: 15px;
+}
+
+.main-shoppingCart .container-products .container-product .product-in-shoppingCart tbody tr td img{
+    width: 80%;
+}
+
+.main-shoppingCart .container-products .container-product .product-in-shoppingCart tbody tr td{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.main-shoppingCart .container-products .container-product .product-in-shoppingCart tbody tr td .fa-solid{
+    color: indianred;
+    margin-left: 5px;
+}
+
+.main-shoppingCart h3{
+    margin-left: 3rem;
+}
+
+.main-shoppingCart .container-buttons{
+    text-align: center;
+    margin: 1rem;
+}
+
+.main-shoppingCart .container-buttons button{
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #d5d5d5;
+    color: black;
+    font-weight: bold;
+}
+
+/*Fin de los estilos de shoppingCart*/
 
 footer{
     width: 100%;
@@ -1385,19 +1446,58 @@ footer{
         width: 100%;
     }
 
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-img{
+        position: relative;
+        overflow: hidden;  
+    }
+
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-img .container-hover{
+        width: 200px;
+        height: 50px;
+        background: #305dc3;
+        position: absolute;
+        bottom: -50px;
+        transition: all 300ms;
+    }
+
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-img:hover .container-hover{
+        height: 300px;
+        bottom: 4px;
+    }
+
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-img .container-btns-pc{
+        display: flex;
+        padding: 10px;
+        position: absolute;
+        bottom: -50px;
+        left: 10px;
+        transition: all 200ms;
+    }
+
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-img .container-btns-pc a{
+        text-decoration: none;
+        color: #00ffdc;
+        font-weight: bold;
+    }
+
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-img .container-btns-pc .btn-cart{
+        border: none;
+        background: transparent;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    .main-products .section-products .container-articles-products .container-article-product .article-product .container-img:hover .container-btns-pc{
+        bottom: 130px;
+    }
+
     .main-products .section-products .container-articles-products .container-article-product .article-product .container-buttons-mobile{
         display: none;        
     }
 
     .main-products .section-products .pagination{
         margin: 30px 0;
-    }
-
-    .main-products .section-products .container-articles-products .container-article-product .article-product .container-hover{
-        width: 136px;
-        height: 50px;
-        background: red;
-    }
+    }    
 
     /*Fin de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 

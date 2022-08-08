@@ -58,6 +58,9 @@ const productController={
     },
     getComicsClothes: (req,res)=>{
         res.sendFile(path.resolve(__dirname,"../views/products/comicsClothes.html"));
+    },
+    getShopingCart: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/products/shoppingCart.html"));
     }
 }
 
