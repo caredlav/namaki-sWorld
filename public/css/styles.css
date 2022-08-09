@@ -697,6 +697,13 @@ input[type="radio"]:checked{
 
 /*Inicio de los estilos de shoppingCart*/
 
+.main-shoppingCart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 .main-shoppingCart h2{
     text-align: center;
     margin: 1rem;
@@ -704,6 +711,10 @@ input[type="radio"]:checked{
 
 .main-shoppingCart .container-products{
     margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .main-shoppingCart .container-products .container-product{
@@ -712,7 +723,12 @@ input[type="radio"]:checked{
     box-shadow: 0px 0px 6px 0px black;
     padding: 1rem;
     margin-bottom: 15px;
-} 
+    width: 100%;
+}
+
+.main-shoppingCart .container-products .container-product .product-in-shoppingCart{
+    width: 82vw;
+}
 
 .main-shoppingCart .container-products .container-product .product-in-shoppingCart thead tr th{
     font-size: 15px;
@@ -720,6 +736,7 @@ input[type="radio"]:checked{
 
 .main-shoppingCart .container-products .container-product .product-in-shoppingCart tbody tr td img{
     width: 80%;
+    height: 100px;
 }
 
 .main-shoppingCart .container-products .container-product .product-in-shoppingCart tbody tr td{
@@ -748,6 +765,10 @@ input[type="radio"]:checked{
     background-color: #d5d5d5;
     color: black;
     font-weight: bold;
+}
+
+.main-shoppingCart .chart-pay{
+    display: none;
 }
 
 /*Fin de los estilos de shoppingCart*/
@@ -930,6 +951,24 @@ footer{
     }
 
     /*Fin de los estilos del animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
+
+    /*Inicio de los estilos del shoppingCart*/
+
+    .main-shoppingCart .container-products .container-product{
+        width: 47%;
+        margin: 8px;
+    }
+
+    .main-shoppingCart .container-products .container-product .product-in-shoppingCart{
+        width: 40vw;
+    }
+
+    .main-shoppingCart h3{
+        text-align: center;
+        margin-left: -8rem;
+    }
+    
+    /*Fin de los estilos del shoppingCart*/
 
     .footer-bar ul li{
         font-size: 25px;
@@ -1501,6 +1540,75 @@ footer{
 
     /*Fin de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
+    /*Inicio de los estilos del shoppingCart*/
+    
+    .main-shoppingCart{
+        height: auto;
+        justify-content: unset;
+        flex-direction: unset;
+    }
+
+    .main-shoppingCart .container-products{
+        display: unset;
+        justify-content: unset;
+        flex-direction: unset;
+        flex-wrap: unset;
+    }
+
+    .main-shoppingCart .container-products .container-product{
+        width: 80%;
+        margin: 15px;
+        height: 28vh;
+    }
+
+    .main-shoppingCart .container-products .container-product .product-in-shoppingCart{
+        width: 90%;
+    }
+
+    .main-shoppingCart .container-products .container-product .product-in-shoppingCart tbody tr td{
+        font-size: 20px;
+    }
+
+    .main-shoppingCart .container-products .container-product .product-in-shoppingCart tbody tr td img{
+        width: 10vw;
+        height: 20vh;
+    }
+
+    .main-shoppingCart .container-products .container-product .product-in-shoppingCart tbody tr td .fa-solid{
+        margin: 0;
+        position: relative;
+        left: 90%;
+    }
+
+    .main-shoppingCart h3{
+        display: none;
+    }
+
+    .main-shoppingCart .container-buttons{
+        display: none;
+    }
+
+    .main-shoppingCart .chart-pay{
+        display: inline;
+        border: 1px solid black;
+        width: 24vw;
+        height: 15vh;
+        background-color: #e7ba6f;
+        position: sticky;
+        top: 8rem;
+        right: 8%;
+        padding: 5px;
+    }
+
+    .main-shoppingCart .chart-pay .container-buttons{
+        display: block;
+    }
+
+    .main-shoppingCart .chart-pay .container-buttons button{
+        cursor: pointer;
+    }
+
+    /*Fin de los estilos del shoppingCart*/
     .footer-bar ul li{
         font-size: 20px;
     }
