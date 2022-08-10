@@ -6,6 +6,9 @@ const homeController={
     },
     getAboutUs: (req,res)=>{
         res.sendFile(path.resolve(__dirname,"../views/aboutUs.html"));
+    },
+    getContactoInfo: (req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../views/contact.html"));
     }
 }
 
