@@ -6,10 +6,17 @@ const routerHome=require('./routes/home.routes');
 const routerUser=require('./routes/user.routes');
 const routerProduct=require('./routes/product.routes')
 
-app.set('views',path.resolve(__dirname,"./views"));
-
 //configuramos la carpeta public para que sea visible del lado del cliente
 app.use(express.static('public'));
+
+//configuracion para usar ejs
+app.set("view engine","ejs");
+
+app.set('views',path.resolve(__dirname,"./views"));
+
+//configuramos la lectura de datos mediante formularios
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 //declaramos las rutas
 app.use('/',routerHome);

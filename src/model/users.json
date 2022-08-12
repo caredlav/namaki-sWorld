@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "user": "prueba",
+        "name": "prueba",
+        "lastname": "prueba",
+        "email": "$2a$12$XFFcykyVtDw7ZcvCcKg.Cuo8ZegNu6aRtqX5sIeS6ZRzZwDCUrKZi",
+        "pass": "fqnfqhbf"
+    },
+    {
+        "id": 2,
+        "user": "cared",
+        "name": "mac",
+        "lastname": "Lavado",
+        "email": "carlosr@hotmail.com",
+        "pass": "$2a$12$xsZ8fYBiwVA2yKTQ1NAmvuyhE1svKC4CsoJGVUI84Pqu5Y2T6y7wi"
+    }
+]

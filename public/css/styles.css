@@ -1707,28 +1707,16 @@ footer{
         transition: all 1000ms;
     }
 
-    .main-contact .contact-pc .container-contact-info img{
+    .main-contact .contact-pc .container-contact-info a img{
         width: 15vw;
+        opacity: 0.5;
+        transition: all 500ms;
     }
 
-    .main-contact .contact-pc .container-contact-info a{
-        display: none;
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
+    .main-contact .contact-pc a img:hover{
+        opacity: 1;
     }
 
-    .main-contact .contact-pc .container-contact-info.gmail:hover a{
-        display: block;
-    }
-
-    .main-contact .contact-pc .container-contact-info.github:hover a{
-        display: block;
-    }
-
-    .main-contact .contact-pc .container-contact-info.linkedin:hover a{
-        display: block;
-    }
     /*Fin de los estilos de contact*/
 
     .footer-bar ul li{

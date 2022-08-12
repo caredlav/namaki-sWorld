@@ -15,39 +15,39 @@
 <body class="body-register">
     <a href="/"><i class="fa-solid fa-house"></i>Volver al inicio</a>    
     <main class="main-register">
-        <form action="" method="" class="form-register-user">
+        <form action="/registro" method="post" class="form-register-user">
             <div>
                 <div class="container-input">
                     <label for="user" class="etiquetas-register">Usuario</label>
-                    <input type="text" class="inputs-register" id="user">
+                    <input type="text" class="inputs-register" id="user" name="username">
                 </div>
                 <div class="container-input">
                     <label for="nombre" class="etiquetas-register">Nombre</label>
-                    <input type="text" class="inputs-register" id="nombre">
+                    <input type="text" class="inputs-register" id="nombre" name="name">
                 </div>
                 <div class="container-input">
                     <label for="apellido" class="etiquetas-register">Apellido</label>
-                    <input type="text" class="inputs-register" id="apellido">
+                    <input type="text" class="inputs-register" id="apellido" name="lastname">
                 </div>                
                 <div class="container-input">
                     <label for="email" class="etiquetas-register">Correo electrónico</label>
-                    <input type="text" class="inputs-register" id="email">
+                    <input type="text" class="inputs-register" id="email" name="email">
                 </div>
                 <div class="container-input">
                     <label for="pass" class="etiquetas-register">Contraseña</label>
-                    <input type="password" class="inputs-register" id="pass">
+                    <input type="password" class="inputs-register" id="pass" name="pass">
                 </div>
                 <div class="container-input">
                     <label for="pass2" class="etiquetas-register">Confirmar contraseña</label>
-                    <input type="password" class="inputs-register" id="pass2">
+                    <input type="password" class="inputs-register" id="pass2" name="repass">
                 </div>
                 <div class="container-terms">
                     <label class="etiqueta-term">¿Acepta los términos y condiciones?</label>
                     <div class="container-radio-buttons">
                         <label for="accepting" class="etiquetas-register">Si</label>
-                        <input type="radio" name="value-input-radio" id="accepting">
+                        <input type="radio" name="accepting" id="accepting">
                         <label for="rejecting" class="etiquetas-register">No</label>
-                        <input type="radio" name="value-input-radio" id="rejecting"> 
+                        <input type="radio" name="rejecting" id="rejecting"> 
                     </div>                   
                 </div>
             </div>
