@@ -27,9 +27,9 @@ const userModel={
         } else {
             let newUser={
             id: newId(),
-            user: user.username,
+            user: user.userName,
             name: user.name,
-            lastname: user.lastname,
+            lastname: user.lastName,
             email: user.email,
             pass:  bcryptjs.hashSync(user.pass,12)
         }

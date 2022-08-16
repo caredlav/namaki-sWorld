@@ -13,41 +13,63 @@
 </head>
 
 <body class="body-register">
-    <a href="/"><i class="fa-solid fa-house"></i>Volver al inicio</a>    
+    <a id="back" href="/"><i class="fa-solid fa-house"></i>Volver al inicio</a>    
     <main class="main-register">
         <form action="/registro" method="post" class="form-register-user">
             <div>
                 <div class="container-input">
                     <label for="user" class="etiquetas-register">Usuario</label>
-                    <input type="text" class="inputs-register" id="user" name="username">
+                    <input type="text" class="inputs-register" id="user" name="userName" 
+                    value="<%= locals.oldData ? oldData.userName : null %>">
+                    <% if (locals.err && err.userName) { %>
+                     <h5 class="msg-error-register"><%= err.userName.msg %></h5>
+                    <% } %>
                 </div>
                 <div class="container-input">
                     <label for="nombre" class="etiquetas-register">Nombre</label>
-                    <input type="text" class="inputs-register" id="nombre" name="name">
+                    <input type="text" class="inputs-register" id="nombre" name="name"
+                    value="<%= locals.oldData ? oldData.name : null %>">
+                    <% if (locals.err && err.name) { %>
+                        <h5 class="msg-error-register"><%= err.name.msg %></h5>
+                       <% } %>
                 </div>
                 <div class="container-input">
                     <label for="apellido" class="etiquetas-register">Apellido</label>
-                    <input type="text" class="inputs-register" id="apellido" name="lastname">
+                    <input type="text" class="inputs-register" id="apellido" name="lastName"
+                    value="<%= locals.oldData ? oldData.lastName : null %>">
+                    <% if (locals.err && err.lastName) { %>
+                        <h5 class="msg-error-register"><%= err.lastName.msg %></h5>
+                       <% } %>
                 </div>                
                 <div class="container-input">
                     <label for="email" class="etiquetas-register">Correo electrónico</label>
-                    <input type="text" class="inputs-register" id="email" name="email">
+                    <input type="text" class="inputs-register" id="email" name="email"
+                    value="<%= locals.oldData ? oldData.email : null %>">
+                    <% if (locals.err && err.email) { %>
+                        <h5 class="msg-error-register"><%= err.email.msg %></h5>
+                       <% } %>
                 </div>
                 <div class="container-input">
                     <label for="pass" class="etiquetas-register">Contraseña</label>
                     <input type="password" class="inputs-register" id="pass" name="pass">
+                    <% if (locals.err && err.pass) { %>
+                        <h5 class="msg-error-register"><%= err.pass.msg %></h5>
+                       <% } %>
                 </div>
                 <div class="container-input">
                     <label for="pass2" class="etiquetas-register">Confirmar contraseña</label>
                     <input type="password" class="inputs-register" id="pass2" name="repass">
+                    <% if (locals.err && err.repass) { %>
+                        <h5 class="msg-error-register"><%= err.repass.msg %></h5>
+                       <% } %>
                 </div>
                 <div class="container-terms">
                     <label class="etiqueta-term">¿Acepta los términos y condiciones?</label>
                     <div class="container-radio-buttons">
-                        <label for="accepting" class="etiquetas-register">Si</label>
-                        <input type="radio" name="accepting" id="accepting">
-                        <label for="rejecting" class="etiquetas-register">No</label>
-                        <input type="radio" name="rejecting" id="rejecting"> 
+                        <label for="select" class="etiquetas-register">Si</label>
+                        <input type="radio" name="select" id="accepting">
+                        <label for="select" class="etiquetas-register">No</label>
+                        <input type="radio" name="select" id="rejecting"> 
                     </div>                   
                 </div>
             </div>
@@ -55,6 +77,7 @@
                 <input type="submit" class="boton-form-register" value="Registrarse">
                 <input type="reset" class="boton-form-register" value="Borrar los campos">
             </div> 
+            <a id="hiperv-login" href="/login">¿Ya tienes cuenta?</a>
         </form>
     </main>
 </body>

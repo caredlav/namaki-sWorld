@@ -100,19 +100,19 @@ header{
     height: 100vh;
 }
 
-.body-register a{
+.body-register #back{
     color: blue;
     font-weight: 900;
 }
 
 .main-register{
-    height: 100vh;
+    height: 117vh;
 }
 
 .form-register-user{
     position: relative;
     top: 2rem;
-    border: solid 1px red;
+    border: solid 1px #80808057;
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;
@@ -140,6 +140,12 @@ header{
 
 .inputs-register:focus{
     outline: unset;
+}
+
+.msg-error-register{
+    text-align: center;
+    color: red;
+    font-size: 1rem;
 }
 
 .container-terms{
@@ -189,6 +195,13 @@ input[type="radio"]:checked{
     font-weight: bold;
     padding: 3px;
     background-color: lightgrey;
+}
+
+#hiperv-login{
+    display: block;
+    text-align: center;
+    color: #0808a3;
+    font-weight: bold;
 }
 
 /*Fin de los estilos del Register*/
@@ -945,8 +958,17 @@ footer{
 
     /*Estilos del Register*/
 
+    .main-register{
+        height: 120vh;
+    }
+
     .inputs-register{
         width: 92vw;
+    }
+
+    .msg-error-register{
+        text-align: start;
+        font-size: 1.3rem;
     }
 
     .container-terms .etiqueta-term{
@@ -1237,7 +1259,7 @@ footer{
         height: unset;
     }
 
-    .body-register a{
+    .body-register #back{
         color: #fff;
         margin-left: 1rem;
         padding: 1rem;
@@ -1247,7 +1269,7 @@ footer{
         text-decoration: none;
     }
 
-    .body-register a:hover{
+    .body-register #back:hover{
         background-color: #200404;
         transition: 500ms;
     }
@@ -1256,15 +1278,25 @@ footer{
         margin-top: 2rem;        
     }
 
+    .main-register{
+        height: auto;
+    }
+
     .form-register-user{
         width: 50vw;
         left: 17rem;
+        top: -2rem;
         background-color: #000000a6;
         border: solid 1px lightgray;
     }
 
     .etiquetas-register{
         color: #fda030;
+    }
+
+    .msg-error-register{
+        text-align: center;
+        font-size: 1.5rem;
     }
 
     .container-terms .etiqueta-term{
@@ -1287,6 +1319,10 @@ footer{
 
     .inputs-register{
         width: 47vw;
+    }
+
+    #hiperv-login{
+        color: #ffd8c9;
     }
 
     /*Fin de los estilos del Register*/
