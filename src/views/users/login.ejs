@@ -15,14 +15,22 @@
 <body class="body-login">
     <a href="/" class="hipervinculo-home"><i class="fa-solid fa-house"></i>Volver al inicio</a> 
     <main>
-        <form action="" method="" class="form-login">
+        <form action="/login" method="post" class="form-login">
             <div class="container-input">
-                <label class="etiquetas-login" for="email">Usuario (también puede ingresar con su correo)</label>
-                <input type="text" class="inputs-login" id="email">       
+                <label class="etiquetas-login" for="userName">Usuario (también puede ingresar con su correo)</label>
+                <input type="text" class="inputs-login" id="userName" name="userName">
+                <% if (locals.err && err.userName) { %>
+                    <h5 class="msg-error-register"><%= err.userName.msg %></h5>
+                <% } %>
             </div>
             <div class="container-input">
                 <label class="etiquetas-login" for="pass">Contraseña</label>
-                <input type="password" class="inputs-login" id="pass">       
+                <input type="password" class="inputs-login" id="pass" name="pass">
+                <% if (locals.err && err.pass) { %>
+                    <h5 class="msg-error-register"><%= err.pass.msg %></h5>
+                <% }else if(locals.msg){ %>
+                    <h5 class="msg-error-register"><%= msg %></h5>
+                <% } %> 
             </div>            
             <div class="container-button-login">
                 <input type="submit" class="boton-login" value="Ingresar">

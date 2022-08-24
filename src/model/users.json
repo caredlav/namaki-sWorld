@@ -14,5 +14,13 @@
         "lastname": "Lavado",
         "email": "carlosr@hotmail.com",
         "pass": "$2a$12$xsZ8fYBiwVA2yKTQ1NAmvuyhE1svKC4CsoJGVUI84Pqu5Y2T6y7wi"
+    },
+    {
+        "id": 3,
+        "userName": "luis12",
+        "name": "luis",
+        "lastName": "alberto",
+        "email": "luis@hotmail.com",
+        "pass": "$2a$12$uOaweNJ8i0lxAoRT/ngwQ.JAK5dA0LCb6vat1CyNe2zwvZkAbSzmW"
     }
 ]

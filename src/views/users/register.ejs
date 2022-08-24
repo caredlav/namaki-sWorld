@@ -22,8 +22,10 @@
                     <input type="text" class="inputs-register" id="user" name="userName" 
                     value="<%= locals.oldData ? oldData.userName : null %>">
                     <% if (locals.err && err.userName) { %>
-                     <h5 class="msg-error-register"><%= err.userName.msg %></h5>
-                    <% } %>
+                        <h5 class="msg-error-register"><%= err.userName.msg %></h5>
+                    <% }else if(locals.msgUserName){ %>
+                        <h5 class="msg-error-register"><%= msgUserName %></h5>
+                    <% } %> 
                 </div>
                 <div class="container-input">
                     <label for="nombre" class="etiquetas-register">Nombre</label>
@@ -47,7 +49,9 @@
                     value="<%= locals.oldData ? oldData.email : null %>">
                     <% if (locals.err && err.email) { %>
                         <h5 class="msg-error-register"><%= err.email.msg %></h5>
-                       <% } %>
+                        <% }else if(locals.msgEMail){ %>
+                            <h5 class="msg-error-register"><%= msgEMail %></h5>
+                        <% } %> 
                 </div>
                 <div class="container-input">
                     <label for="pass" class="etiquetas-register">Contraseña</label>
@@ -67,9 +71,9 @@
                     <label class="etiqueta-term">¿Acepta los términos y condiciones?</label>
                     <div class="container-radio-buttons">
                         <label for="select" class="etiquetas-register">Si</label>
-                        <input type="radio" name="select" id="accepting">
+                        <input type="radio" name="select" id="accepting" required>
                         <label for="select" class="etiquetas-register">No</label>
-                        <input type="radio" name="select" id="rejecting"> 
+                        <input type="radio" name="select" id="rejecting" required> 
                     </div>                   
                 </div>
             </div>
