@@ -1,0 +1,11 @@
+[
+    {
+        "id": 0,
+        "name": "producto",
+        "description": "ejemplo",
+        "price": 21200,
+        "image": ["prueba.jpg"],
+        "cateogry": "anime",
+        "subcategory": "manga"
+    }
+]

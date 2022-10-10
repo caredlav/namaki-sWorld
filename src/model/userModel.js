@@ -4,11 +4,14 @@ const userDB=JSON.parse(fs.readFileSync(path.resolve(__dirname,"./users.json")),
 const bcryptjs=require("bcryptjs");
 
 const newId=()=>{
-    let lastUser=userDB.pop();
-    userDB.push(lastUser);
-    let id=lastUser.id+1;
-    return id;
-}
+    let lastId=0;
+    userDB.forEach(user=>{
+        if (user.id>lastId) {
+            lastId=user.id;
+        }
+    });
+    return lastId+1;
+    }
 
 const findUser=(info,c)=>{
     if(c==1){

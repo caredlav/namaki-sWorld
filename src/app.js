@@ -23,5 +23,10 @@ app.use('/',routerHome);
 app.use('/',routerUser);
 app.use('/',routerProduct);
 
+//renderizar página de error
+app.use((req,res,next)=>{
+    res.render("error");
+})
+
 //se levanta el servidor en el puerto 3000
 app.listen(3000,console.log('corriendo en puerto 3000'));
