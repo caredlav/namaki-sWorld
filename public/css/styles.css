@@ -708,6 +708,53 @@ input[type="radio"]:checked{
 
 /*Fin de los estilos de animeFigures, animeResins, animeClothes, animeAccessories, animeMangas*/
 
+/*Inicio de los estilos de productDetail*/
+
+.main-product-detail{
+    width: 100%;
+}
+
+.main-product-detail .container-product .product-img{
+    display: block;
+    margin: auto;
+    width: 70vw;
+    height: 50vh;
+}
+
+.main-product-detail .container-product .box-first-info{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: #66817fab;
+}
+
+.main-product-detail .container-product .box-first-info label{
+    display: block;
+    text-align: center;    
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main-product-detail .container-product .box-first-info button{
+    display: block;
+    margin-top: 10px;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: antiquewhite;
+    border: none;
+    font-size: 18px;
+}
+
+.main-product-detail .container-product p{
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*Fin de los estilos de productDetail*/
+
 /*Inicio de los estilos de shoppingCart*/
 
 .main-shoppingCart{

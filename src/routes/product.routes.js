@@ -21,6 +21,7 @@ router.get("/categorias/comics/resinas",productsController.getComicsResins);
 router.get("/categorias/comics/novelas",productsController.getComics);
 router.get("/categorias/comics/accesorios",productsController.getComicsAccessories);
 router.get("/categorias/comics/ropa",productsController.getComicsClothes);
+router.get("/categorias/anime/figuras/producto",productsController.getProduct);
 router.get("/carrito",productsController.getShopingCart);
 
 module.exports=router;
